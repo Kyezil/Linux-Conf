@@ -1,0 +1,5 @@
+# My variables
+FIB="https://raco.fib.upc.edu/davenport/disc/dades/louis.pierre.joseph.clergue"
+export FIB
+PRO2="https://raco.fib.upc.edu/davenport/disc/assig/"
+export PRO2

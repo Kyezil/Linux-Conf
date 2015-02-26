@@ -1,0 +1,123 @@
+" .vimrc
+" Author: Louis Clergue <louisclergue@gmail.com>
+
+" Preamble -----------------------------------------------
+filetype off
+set nocompatible
+
+" Vundle -------------------------------------------------
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
+
+call vundle#end()
+filetype plugin indent on
+
+let mapleader=","
+" Basic options ------------------------------------------
+set encoding=utf-8
+set noshowmode
+set showcmd
+set hidden
+set number
+set ruler
+set cmdheight=1
+
+set autoindent
+set copyindent
+set smartindent
+
+set backspace=indent,eol,start
+set cursorline
+set laststatus=2
+set history=1000
+set list
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set lazyredraw
+set matchtime=3
+set showbreak=↪
+set splitbelow
+set splitright
+set shiftround
+set title
+set linebreak
+set colorcolumn=+1
+
+"Search and regexp
+set ignorecase
+set smartcase
+set incsearch
+set magic
+set hlsearch
+" nnoremap <silent> <Leader>/ :nohlsearch<CR>
+" Time out on key codes but not mapping.
+
+set timeout
+set timeoutlen=300
+set ttimeout
+set ttimeoutlen=10
+
+" Resize splits when the window is resized
+au VimResized * :wincmd =
+
+set wildmenu
+set wildmode=list:longest
+
+"Annoying things
+nnoremap Q <nop>
+
+" Tabs, spaces, wrapping
+set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set wrap
+set textwidth=80
+set formatoptions=qrnlj
+
+set noswapfile
+
+" Show trailing spaces when not in insert mode
+augroup trailing
+    au!
+    au InsertEnter * :set listchars-=trail:⌴
+    au InsertLeave * :set listchars+=trail:⌴
+augroup END
+
+" Color scheme
+
+syntax on
+set t_Co=256
+set background=dark
+colorscheme monokai
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+let g:airline_powerline_fonts = 1
+let g:airline_theme= 'badwolf'
+
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.whitespace = 'Ξ'
+" Remaps
+let g:airline_detect_whitespace=1
+let g:airline#extensions#whitespace#trailing_format = '%s'
+
+" Remove trailing spaces
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
+" Only show cursorline in the current window and in normal mode.
+augroup cline
+    au!
+    au WinLeave,InsertEnter * set nocursorline
+    au WinEnter,InsertLeave * set cursorline
+augroup END

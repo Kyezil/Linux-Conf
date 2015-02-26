@@ -1,0 +1,19 @@
+ Instruccions to install Colemak Keyboard
+ 
+ 1. Make a backup of /usr/share/X11/xkb/symbols/us
+ 
+ 2. Replace it with us file
+ 
+ 3. Add this line in /usr/share/X11/xkb/rules/xfree86.lst under !variant :
+ colemak-prog    us: English (programmer Colemak)
+ 
+ 4. Add this in /usr/share/X11/xkb/rules/xfree86.xml
+ 
+<variant>
+    <configItem>
+        <name>colemak-prog</name>
+        <description>English (programmer Colemak)</description>
+    </configItem>
+</variant>
+
+5. Restart X server (Ctrl-Alt-Backspace)

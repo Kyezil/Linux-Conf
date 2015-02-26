@@ -1,0 +1,4 @@
+# Separate file for aliases
+alias p++='g++ -ansi -O2 -DNDEBUG -D_GLIBCXX_DEBUG -Wshadow -Wall -Wextra -Werror -Wno-uninitialized -Wno-sign-compare'
+alias tmux='tmux -2'
+alias python='python3'
