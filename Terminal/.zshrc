@@ -30,7 +30,6 @@ set DEFAULT_USER="louis"
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
-
 # - Highlight
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 # Override highlighter colors
