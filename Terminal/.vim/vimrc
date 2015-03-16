@@ -1,6 +1,5 @@
 " .vimrc
 " Author: Louis Clergue <louisclergue@gmail.com>
-
 " Preamble -----------------------------------------------
 filetype off
 set nocompatible
@@ -10,7 +9,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,10 +27,13 @@ set hidden
 set number
 set ruler
 set cmdheight=1
-
 set autoindent
 set copyindent
 set smartindent
+
+"Better Completion
+set complete=.,w,b,u,t
+set completeopt=longest,menuone,preview
 
 set backspace=indent,eol,start
 set cursorline
@@ -50,14 +56,14 @@ set ignorecase
 set smartcase
 set incsearch
 set magic
-set hlsearch
+set nohlsearch
 " nnoremap <silent> <Leader>/ :nohlsearch<CR>
 " Time out on key codes but not mapping.
 
 set timeout
 set timeoutlen=300
 set ttimeout
-set ttimeoutlen=10
+set ttimeoutlen=50
 
 " Resize splits when the window is resized
 au VimResized * :wincmd =
@@ -66,7 +72,6 @@ set wildmenu
 set wildmode=list:longest
 
 "Annoying things
-nnoremap Q <nop>
 
 " Tabs, spaces, wrapping
 set tabstop=8
@@ -76,19 +81,13 @@ set expandtab
 set wrap
 set textwidth=80
 set formatoptions=qrnlj
-
 set noswapfile
-
-" Show trailing spaces when not in insert mode
-augroup trailing
-    au!
-    au InsertEnter * :set listchars-=trail:⌴
-    au InsertLeave * :set listchars+=trail:⌴
-augroup END
+set foldmethod=marker
+" PRO2 Extensiosn
+syntax on
+au BufNewFile,BufRead *.doc set filetype=cpp
 
 " Color scheme
-
-syntax on
 set t_Co=256
 set background=dark
 colorscheme monokai
@@ -97,12 +96,13 @@ colorscheme monokai
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 "let g:airline#extensions#tabline#left_sep = ' '
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1 
 let g:airline_theme= 'badwolf'
 
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
   endif
+
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_symbols.linenr = '¶'
@@ -113,8 +113,21 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_detect_whitespace=1
 let g:airline#extensions#whitespace#trailing_format = '%s'
 
-" Remove trailing spaces
-nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Clean trailing whitespace
+nnoremap <leader>ww mz:%s/\s\+$//<cr>:let @/=''<cr>`z
+
+" CtrlPTags
+nnoremap <leader>t :CtrlPTag<CR>
 
 " Only show cursorline in the current window and in normal mode.
 augroup cline
@@ -122,3 +135,23 @@ augroup cline
     au WinLeave,InsertEnter * set nocursorline
     au WinEnter,InsertLeave * set cursorline
 augroup END
+
+" Make sure Vim returns to the same line when reopen
+augroup line_return
+    au!
+    au BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \     execute 'normal! g`"zvzz' |
+        \ endif
+augroup END
+
+" Toggle line number
+nnoremap <leader>n :setlocal number!<cr>
+
+" Tabs
+nnoremap <leader>( :tabprev<cr>
+nnoremap <leader>) :tabnext<cr>
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv

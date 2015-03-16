@@ -62,7 +62,7 @@ syn cluster cppSTLgroup     contains=cppSTLfunction,cppSTLfunctional,cppSTLconst
 " -----------------------------------------------------------------------------
 "  Standard library types and functions.
 "
-" Mainly based on the excellent STL Syntax vim script by 
+" Mainly based on the excellent STL Syntax vim script by
 " Mizuchi <ytj000@gmail.com>
 "   http://www.vim.org/scripts/script.php?script_id=4293
 " which in turn is based on the scripts
@@ -120,386 +120,386 @@ syntax keyword cppSTLexception overflow_error
 syntax keyword cppSTLexception range_error
 syntax keyword cppSTLexception runtime_error
 syntax keyword cppSTLexception underflow_error
-syntax keyword cppSTLfunction abort
-syntax keyword cppSTLfunction abs
-syntax keyword cppSTLfunction accumulate
-syntax keyword cppSTLfunction acos
-syntax keyword cppSTLfunction adjacent_difference
-syntax keyword cppSTLfunction adjacent_find
-syntax keyword cppSTLfunction adjacent_find_if
-syntax keyword cppSTLfunction advance
-syntax keyword cppSTLfunctional binary_function
-syntax keyword cppSTLfunctional binary_negate
-syntax keyword cppSTLfunctional bit_and
-syntax keyword cppSTLfunctional bit_not
-syntax keyword cppSTLfunctional bit_or
-syntax keyword cppSTLfunctional divides
-syntax keyword cppSTLfunctional equal_to
-syntax keyword cppSTLfunctional greater
-syntax keyword cppSTLfunctional greater_equal
-syntax keyword cppSTLfunctional less
-syntax keyword cppSTLfunctional less_equal
-syntax keyword cppSTLfunctional logical_and
-syntax keyword cppSTLfunctional logical_not
-syntax keyword cppSTLfunctional logical_or
-syntax keyword cppSTLfunctional minus
-syntax keyword cppSTLfunctional modulus
-syntax keyword cppSTLfunctional multiplies
-syntax keyword cppSTLfunctional negate
-syntax keyword cppSTLfunctional not_equal_to
-syntax keyword cppSTLfunctional plus
-syntax keyword cppSTLfunctional unary_function
-syntax keyword cppSTLfunctional unary_negate
-"syntax keyword cppSTLfunction any
-syntax keyword cppSTLfunction append
-syntax keyword cppSTLfunction arg
-syntax keyword cppSTLfunction asctime
-syntax keyword cppSTLfunction asin
-syntax keyword cppSTLfunction assert
-syntax keyword cppSTLfunction assign
-syntax keyword cppSTLfunction at
-syntax keyword cppSTLfunction atan
-syntax keyword cppSTLfunction atan2
-syntax keyword cppSTLfunction atexit
-syntax keyword cppSTLfunction atof
-syntax keyword cppSTLfunction atoi
-syntax keyword cppSTLfunction atol
-syntax keyword cppSTLfunction atoll
-syntax keyword cppSTLfunction back
-syntax keyword cppSTLfunction back_inserter
-syntax keyword cppSTLfunction bad
-syntax keyword cppSTLfunction beg
-syntax keyword cppSTLfunction begin
-syntax keyword cppSTLfunction binary_compose
-syntax keyword cppSTLfunction binary_negate
-syntax keyword cppSTLfunction binary_search
-syntax keyword cppSTLfunction bind1st
-syntax keyword cppSTLfunction bind2nd
-syntax keyword cppSTLfunction binder1st
-syntax keyword cppSTLfunction binder2nd
-syntax keyword cppSTLfunction bsearch
-syntax keyword cppSTLfunction calloc
-syntax keyword cppSTLfunction capacity
-syntax keyword cppSTLfunction ceil
-syntax keyword cppSTLfunction clear
-syntax keyword cppSTLfunction clearerr
-syntax keyword cppSTLfunction clock
-syntax keyword cppSTLfunction close
-syntax keyword cppSTLfunction compare
-syntax keyword cppSTLfunction conj
-syntax keyword cppSTLfunction construct
-syntax keyword cppSTLfunction copy
-syntax keyword cppSTLfunction copy_backward
-syntax keyword cppSTLfunction cos
-syntax keyword cppSTLfunction cosh
-syntax keyword cppSTLfunction count
-syntax keyword cppSTLfunction count_if
-syntax keyword cppSTLfunction c_str
-syntax keyword cppSTLfunction ctime
-syntax keyword cppSTLfunction data
-syntax keyword cppSTLfunction denorm_min
-syntax keyword cppSTLfunction destroy
-syntax keyword cppSTLfunction difftime
-syntax keyword cppSTLfunction distance
-syntax keyword cppSTLfunction div
-syntax keyword cppSTLfunction empty
-syntax keyword cppSTLfunction end
-syntax keyword cppSTLfunction eof
-syntax keyword cppSTLfunction epsilon
-syntax keyword cppSTLfunction equal
-syntax keyword cppSTLfunction equal_range
-syntax keyword cppSTLfunction erase
-syntax keyword cppSTLfunction exit
-syntax keyword cppSTLfunction exp
-syntax keyword cppSTLfunction fabs
-syntax keyword cppSTLfunction fail
-syntax keyword cppSTLfunction failure
-syntax keyword cppSTLfunction fclose
-syntax keyword cppSTLfunction feof
-syntax keyword cppSTLfunction ferror
-syntax keyword cppSTLfunction fflush
-syntax keyword cppSTLfunction fgetc
-syntax keyword cppSTLfunction fgetpos
-syntax keyword cppSTLfunction fgets
-syntax keyword cppSTLfunction fill
-syntax keyword cppSTLfunction fill_n
-syntax keyword cppSTLfunction find
-syntax keyword cppSTLfunction find_end
-syntax keyword cppSTLfunction find_first_not_of
-syntax keyword cppSTLfunction find_first_of
-syntax keyword cppSTLfunction find_if
-syntax keyword cppSTLfunction find_last_not_of
-syntax keyword cppSTLfunction find_last_of
-syntax keyword cppSTLfunction first
-syntax keyword cppSTLfunction flags
-syntax keyword cppSTLfunction flip
-syntax keyword cppSTLfunction floor
-syntax keyword cppSTLfunction flush
-syntax keyword cppSTLfunction fmod
-syntax keyword cppSTLfunction fopen
-syntax keyword cppSTLfunction for_each
-syntax keyword cppSTLfunction fprintf
-syntax keyword cppSTLfunction fputc
-syntax keyword cppSTLfunction fputs
-syntax keyword cppSTLfunction fread
-syntax keyword cppSTLfunction free
-syntax keyword cppSTLfunction freopen
-syntax keyword cppSTLfunction frexp
-syntax keyword cppSTLfunction front
-syntax keyword cppSTLfunction fscanf
-syntax keyword cppSTLfunction fseek
-syntax keyword cppSTLfunction fsetpos
-syntax keyword cppSTLfunction ftell
-syntax keyword cppSTLfunction fwide
-syntax keyword cppSTLfunction fwprintf
-syntax keyword cppSTLfunction fwrite
-syntax keyword cppSTLfunction fwscanf
-syntax keyword cppSTLfunction gcount
-syntax keyword cppSTLfunction generate
-syntax keyword cppSTLfunction generate_n
-syntax keyword cppSTLfunction get
-syntax keyword cppSTLfunction get_allocator
-syntax keyword cppSTLfunction getc
-syntax keyword cppSTLfunction getchar
-syntax keyword cppSTLfunction getenv
-syntax keyword cppSTLfunction getline
-syntax keyword cppSTLfunction gets
-syntax keyword cppSTLfunction get_temporary_buffer
-syntax keyword cppSTLfunction gmtime
-syntax keyword cppSTLfunction good
-syntax keyword cppSTLfunction ignore
-syntax keyword cppSTLfunction imag
-syntax keyword cppSTLfunction in
-syntax keyword cppSTLfunction includes
-syntax keyword cppSTLfunction infinity
-syntax keyword cppSTLfunction inner_product
-syntax keyword cppSTLfunction inplace_merge
-syntax keyword cppSTLfunction insert
-syntax keyword cppSTLfunction inserter
-syntax keyword cppSTLfunction ios
-syntax keyword cppSTLfunction ios_base
-syntax keyword cppSTLfunction iostate
-syntax keyword cppSTLfunction iota
-syntax keyword cppSTLfunction isalnum
-syntax keyword cppSTLfunction isalpha
-syntax keyword cppSTLfunction iscntrl
-syntax keyword cppSTLfunction isdigit
-syntax keyword cppSTLfunction isgraph
-syntax keyword cppSTLfunction is_heap
-syntax keyword cppSTLfunction islower
-syntax keyword cppSTLfunction is_open
-syntax keyword cppSTLfunction isprint
-syntax keyword cppSTLfunction ispunct
-syntax keyword cppSTLfunction isspace
-syntax keyword cppSTLfunction isupper
-syntax keyword cppSTLfunction isxdigit
-syntax keyword cppSTLfunction iterator_category
-syntax keyword cppSTLfunction iter_swap
-syntax keyword cppSTLfunction jmp_buf
-syntax keyword cppSTLfunction key_comp
-syntax keyword cppSTLfunction labs
-syntax keyword cppSTLfunction ldexp
-syntax keyword cppSTLfunction ldiv
-syntax keyword cppSTLfunction length
-syntax keyword cppSTLfunction lexicographical_compare
-syntax keyword cppSTLfunction lexicographical_compare_3way
-syntax keyword cppSTLfunction llabs
-syntax keyword cppSTLfunction lldiv
-syntax keyword cppSTLfunction localtime
-syntax keyword cppSTLfunction log
-syntax keyword cppSTLfunction log10
-syntax keyword cppSTLfunction longjmp
-syntax keyword cppSTLfunction lower_bound
-syntax keyword cppSTLfunction make_heap
-syntax keyword cppSTLfunction make_pair
-syntax keyword cppSTLfunction malloc
-syntax keyword cppSTLfunction max
-syntax keyword cppSTLfunction max_element
-syntax keyword cppSTLfunction max_size
-syntax keyword cppSTLfunction memchr
-syntax keyword cppSTLfunction memcpy
-syntax keyword cppSTLfunction mem_fun
-syntax keyword cppSTLfunction mem_fun_ref
-syntax keyword cppSTLfunction memmove
-syntax keyword cppSTLfunction memset
-syntax keyword cppSTLfunction merge
-syntax keyword cppSTLfunction min
-syntax keyword cppSTLfunction min_element
-syntax keyword cppSTLfunction mismatch
-syntax keyword cppSTLfunction mktime
-syntax keyword cppSTLfunction modf
-syntax keyword cppSTLfunction next_permutation
-syntax keyword cppSTLfunction none
-syntax keyword cppSTLfunction norm
-syntax keyword cppSTLfunction not1
-syntax keyword cppSTLfunction not2
-syntax keyword cppSTLfunction nth_element
+"syntax keyword cppSTLfunction abort
+"syntax keyword cppSTLfunction abs
+"syntax keyword cppSTLfunction accumulate
+"syntax keyword cppSTLfunction acos
+"syntax keyword cppSTLfunction adjacent_difference
+"syntax keyword cppSTLfunction adjacent_find
+"syntax keyword cppSTLfunction adjacent_find_if
+"syntax keyword cppSTLfunction advance
+"syntax keyword cppSTLfunctional binary_function
+"syntax keyword cppSTLfunctional binary_negate
+"syntax keyword cppSTLfunctional bit_and
+"syntax keyword cppSTLfunctional bit_not
+"syntax keyword cppSTLfunctional bit_or
+"syntax keyword cppSTLfunctional divides
+"syntax keyword cppSTLfunctional equal_to
+"syntax keyword cppSTLfunctional greater
+"syntax keyword cppSTLfunctional greater_equal
+"syntax keyword cppSTLfunctional less
+"syntax keyword cppSTLfunctional less_equal
+"syntax keyword cppSTLfunctional logical_and
+"syntax keyword cppSTLfunctional logical_not
+"syntax keyword cppSTLfunctional logical_or
+"syntax keyword cppSTLfunctional minus
+"syntax keyword cppSTLfunctional modulus
+"syntax keyword cppSTLfunctional multiplies
+"syntax keyword cppSTLfunctional negate
+"syntax keyword cppSTLfunctional not_equal_to
+"syntax keyword cppSTLfunctional plus
+"syntax keyword cppSTLfunctional unary_function
+"syntax keyword cppSTLfunctional unary_negate
+""syntax keyword cppSTLfunction any
+"syntax keyword cppSTLfunction append
+"syntax keyword cppSTLfunction arg
+"syntax keyword cppSTLfunction asctime
+"syntax keyword cppSTLfunction asin
+"syntax keyword cppSTLfunction assert
+"syntax keyword cppSTLfunction assign
+"syntax keyword cppSTLfunction at
+"syntax keyword cppSTLfunction atan
+"syntax keyword cppSTLfunction atan2
+"syntax keyword cppSTLfunction atexit
+"syntax keyword cppSTLfunction atof
+"syntax keyword cppSTLfunction atoi
+"syntax keyword cppSTLfunction atol
+"syntax keyword cppSTLfunction atoll
+"syntax keyword cppSTLfunction back
+"syntax keyword cppSTLfunction back_inserter
+"syntax keyword cppSTLfunction bad
+"syntax keyword cppSTLfunction beg
+"syntax keyword cppSTLfunction begin
+"syntax keyword cppSTLfunction binary_compose
+"syntax keyword cppSTLfunction binary_negate
+"syntax keyword cppSTLfunction binary_search
+"syntax keyword cppSTLfunction bind1st
+"syntax keyword cppSTLfunction bind2nd
+"syntax keyword cppSTLfunction binder1st
+"syntax keyword cppSTLfunction binder2nd
+"syntax keyword cppSTLfunction bsearch
+"syntax keyword cppSTLfunction calloc
+"syntax keyword cppSTLfunction capacity
+"syntax keyword cppSTLfunction ceil
+"syntax keyword cppSTLfunction clear
+"syntax keyword cppSTLfunction clearerr
+"syntax keyword cppSTLfunction clock
+"syntax keyword cppSTLfunction close
+"syntax keyword cppSTLfunction compare
+"syntax keyword cppSTLfunction conj
+"syntax keyword cppSTLfunction construct
+"syntax keyword cppSTLfunction copy
+"syntax keyword cppSTLfunction copy_backward
+"syntax keyword cppSTLfunction cos
+"syntax keyword cppSTLfunction cosh
+"syntax keyword cppSTLfunction count
+"syntax keyword cppSTLfunction count_if
+"syntax keyword cppSTLfunction c_str
+"syntax keyword cppSTLfunction ctime
+"syntax keyword cppSTLfunction data
+"syntax keyword cppSTLfunction denorm_min
+"syntax keyword cppSTLfunction destroy
+"syntax keyword cppSTLfunction difftime
+"syntax keyword cppSTLfunction distance
+"syntax keyword cppSTLfunction div
+"syntax keyword cppSTLfunction empty
+"syntax keyword cppSTLfunction end
+"syntax keyword cppSTLfunction eof
+"syntax keyword cppSTLfunction epsilon
+"syntax keyword cppSTLfunction equal
+"syntax keyword cppSTLfunction equal_range
+"syntax keyword cppSTLfunction erase
+"syntax keyword cppSTLfunction exit
+"syntax keyword cppSTLfunction exp
+"syntax keyword cppSTLfunction fabs
+"syntax keyword cppSTLfunction fail
+"syntax keyword cppSTLfunction failure
+"syntax keyword cppSTLfunction fclose
+"syntax keyword cppSTLfunction feof
+"syntax keyword cppSTLfunction ferror
+"syntax keyword cppSTLfunction fflush
+"syntax keyword cppSTLfunction fgetc
+"syntax keyword cppSTLfunction fgetpos
+"syntax keyword cppSTLfunction fgets
+"syntax keyword cppSTLfunction fill
+"syntax keyword cppSTLfunction fill_n
+"syntax keyword cppSTLfunction find
+"syntax keyword cppSTLfunction find_end
+"syntax keyword cppSTLfunction find_first_not_of
+"syntax keyword cppSTLfunction find_first_of
+"syntax keyword cppSTLfunction find_if
+"syntax keyword cppSTLfunction find_last_not_of
+"syntax keyword cppSTLfunction find_last_of
+"syntax keyword cppSTLfunction first
+"syntax keyword cppSTLfunction flags
+"syntax keyword cppSTLfunction flip
+"syntax keyword cppSTLfunction floor
+"syntax keyword cppSTLfunction flush
+"syntax keyword cppSTLfunction fmod
+"syntax keyword cppSTLfunction fopen
+"syntax keyword cppSTLfunction for_each
+"syntax keyword cppSTLfunction fprintf
+"syntax keyword cppSTLfunction fputc
+"syntax keyword cppSTLfunction fputs
+"syntax keyword cppSTLfunction fread
+"syntax keyword cppSTLfunction free
+"syntax keyword cppSTLfunction freopen
+"syntax keyword cppSTLfunction frexp
+"syntax keyword cppSTLfunction front
+"syntax keyword cppSTLfunction fscanf
+"syntax keyword cppSTLfunction fseek
+"syntax keyword cppSTLfunction fsetpos
+"syntax keyword cppSTLfunction ftell
+"syntax keyword cppSTLfunction fwide
+"syntax keyword cppSTLfunction fwprintf
+"syntax keyword cppSTLfunction fwrite
+"syntax keyword cppSTLfunction fwscanf
+"syntax keyword cppSTLfunction gcount
+"syntax keyword cppSTLfunction generate
+"syntax keyword cppSTLfunction generate_n
+"syntax keyword cppSTLfunction get
+"syntax keyword cppSTLfunction get_allocator
+"syntax keyword cppSTLfunction getc
+"syntax keyword cppSTLfunction getchar
+"syntax keyword cppSTLfunction getenv
+"syntax keyword cppSTLfunction getline
+"syntax keyword cppSTLfunction gets
+"syntax keyword cppSTLfunction get_temporary_buffer
+"syntax keyword cppSTLfunction gmtime
+"syntax keyword cppSTLfunction good
+"syntax keyword cppSTLfunction ignore
+"syntax keyword cppSTLfunction imag
+"syntax keyword cppSTLfunction in
+"syntax keyword cppSTLfunction includes
+"syntax keyword cppSTLfunction infinity
+"syntax keyword cppSTLfunction inner_product
+"syntax keyword cppSTLfunction inplace_merge
+"syntax keyword cppSTLfunction insert
+"syntax keyword cppSTLfunction inserter
+"syntax keyword cppSTLfunction ios
+"syntax keyword cppSTLfunction ios_base
+"syntax keyword cppSTLfunction iostate
+"syntax keyword cppSTLfunction iota
+"syntax keyword cppSTLfunction isalnum
+"syntax keyword cppSTLfunction isalpha
+"syntax keyword cppSTLfunction iscntrl
+"syntax keyword cppSTLfunction isdigit
+"syntax keyword cppSTLfunction isgraph
+"syntax keyword cppSTLfunction is_heap
+"syntax keyword cppSTLfunction islower
+"syntax keyword cppSTLfunction is_open
+"syntax keyword cppSTLfunction isprint
+"syntax keyword cppSTLfunction ispunct
+"syntax keyword cppSTLfunction isspace
+"syntax keyword cppSTLfunction isupper
+"syntax keyword cppSTLfunction isxdigit
+"syntax keyword cppSTLfunction iterator_category
+"syntax keyword cppSTLfunction iter_swap
+"syntax keyword cppSTLfunction jmp_buf
+"syntax keyword cppSTLfunction key_comp
+"syntax keyword cppSTLfunction labs
+"syntax keyword cppSTLfunction ldexp
+"syntax keyword cppSTLfunction ldiv
+"syntax keyword cppSTLfunction length
+"syntax keyword cppSTLfunction lexicographical_compare
+"syntax keyword cppSTLfunction lexicographical_compare_3way
+"syntax keyword cppSTLfunction llabs
+"syntax keyword cppSTLfunction lldiv
+"syntax keyword cppSTLfunction localtime
+"syntax keyword cppSTLfunction log
+"syntax keyword cppSTLfunction log10
+"syntax keyword cppSTLfunction longjmp
+"syntax keyword cppSTLfunction lower_bound
+"syntax keyword cppSTLfunction make_heap
+"syntax keyword cppSTLfunction make_pair
+"syntax keyword cppSTLfunction malloc
+"syntax keyword cppSTLfunction max
+"syntax keyword cppSTLfunction max_element
+"syntax keyword cppSTLfunction max_size
+"syntax keyword cppSTLfunction memchr
+"syntax keyword cppSTLfunction memcpy
+"syntax keyword cppSTLfunction mem_fun
+"syntax keyword cppSTLfunction mem_fun_ref
+"syntax keyword cppSTLfunction memmove
+"syntax keyword cppSTLfunction memset
+"syntax keyword cppSTLfunction merge
+"syntax keyword cppSTLfunction min
+"syntax keyword cppSTLfunction min_element
+"syntax keyword cppSTLfunction mismatch
+"syntax keyword cppSTLfunction mktime
+"syntax keyword cppSTLfunction modf
+"syntax keyword cppSTLfunction next_permutation
+"syntax keyword cppSTLfunction none
+"syntax keyword cppSTLfunction norm
+"syntax keyword cppSTLfunction not1
+"syntax keyword cppSTLfunction not2
+"syntax keyword cppSTLfunction nth_element
 syntax keyword cppSTLtype numeric_limits
-syntax keyword cppSTLfunction open
-syntax keyword cppSTLfunction partial_sort
-syntax keyword cppSTLfunction partial_sort_copy
-syntax keyword cppSTLfunction partial_sum
-syntax keyword cppSTLfunction partition
-syntax keyword cppSTLfunction peek
-syntax keyword cppSTLfunction perror
-syntax keyword cppSTLfunction polar
-syntax keyword cppSTLfunction pop
-syntax keyword cppSTLfunction pop_back
-syntax keyword cppSTLfunction pop_front
-syntax keyword cppSTLfunction pop_heap
-syntax keyword cppSTLfunction pow
-syntax keyword cppSTLfunction power
-syntax keyword cppSTLfunction precision
-syntax keyword cppSTLfunction prev_permutation
-syntax keyword cppSTLfunction printf
-syntax keyword cppSTLfunction ptr_fun
-syntax keyword cppSTLfunction push
-syntax keyword cppSTLfunction push_back
-syntax keyword cppSTLfunction push_front
-syntax keyword cppSTLfunction push_heap
-syntax keyword cppSTLfunction put
-syntax keyword cppSTLfunction putback
-syntax keyword cppSTLfunction putc
-syntax keyword cppSTLfunction putchar
-syntax keyword cppSTLfunction puts
-syntax keyword cppSTLfunction qsort
-syntax keyword cppSTLfunction quiet_NaN
-syntax keyword cppSTLfunction raise
-syntax keyword cppSTLfunction rand
-syntax keyword cppSTLfunction random_sample
-syntax keyword cppSTLfunction random_sample_n
-syntax keyword cppSTLfunction random_shuffle
-syntax keyword cppSTLfunction rbegin
-syntax keyword cppSTLfunction rdbuf
-syntax keyword cppSTLfunction rdstate
-syntax keyword cppSTLfunction read
-syntax keyword cppSTLfunction real
-syntax keyword cppSTLfunction realloc
-syntax keyword cppSTLfunction remove
-syntax keyword cppSTLfunction remove_copy
-syntax keyword cppSTLfunction remove_copy_if
-syntax keyword cppSTLfunction remove_if
-syntax keyword cppSTLfunction rename
-syntax keyword cppSTLfunction rend
-syntax keyword cppSTLfunction replace
-syntax keyword cppSTLfunction replace_copy
-syntax keyword cppSTLfunction replace_copy_if
-syntax keyword cppSTLfunction replace_if
-syntax keyword cppSTLfunction reserve
-syntax keyword cppSTLfunction reset
-syntax keyword cppSTLfunction resize
-syntax keyword cppSTLfunction return_temporary_buffer
-syntax keyword cppSTLfunction reverse
-syntax keyword cppSTLfunction reverse_copy
-syntax keyword cppSTLfunction rewind
-syntax keyword cppSTLfunction rfind
-syntax keyword cppSTLfunction rotate
-syntax keyword cppSTLfunction rotate_copy
-syntax keyword cppSTLfunction round_error
-syntax keyword cppSTLfunction scanf
-syntax keyword cppSTLfunction search
-syntax keyword cppSTLfunction search_n
-syntax keyword cppSTLfunction second
-syntax keyword cppSTLfunction seekg
-syntax keyword cppSTLfunction seekp
-syntax keyword cppSTLfunction setbuf
-syntax keyword cppSTLfunction set_difference
-syntax keyword cppSTLfunction setf
-syntax keyword cppSTLfunction set_intersection
-syntax keyword cppSTLfunction setjmp
-syntax keyword cppSTLfunction setlocale
-syntax keyword cppSTLfunction set_new_handler
-syntax keyword cppSTLfunction set_symmetric_difference
-syntax keyword cppSTLfunction set_union
-syntax keyword cppSTLfunction setvbuf
-syntax keyword cppSTLfunction signal
-syntax keyword cppSTLfunction signaling_NaN
-syntax keyword cppSTLfunction sin
-syntax keyword cppSTLfunction sinh
-syntax keyword cppSTLfunction size
-syntax keyword cppSTLfunction sort
-syntax keyword cppSTLfunction sort_heap
-syntax keyword cppSTLfunction splice
-syntax keyword cppSTLfunction sprintf
-syntax keyword cppSTLfunction sqrt
-syntax keyword cppSTLfunction srand
-syntax keyword cppSTLfunction sscanf
-syntax keyword cppSTLfunction stable_partition
-syntax keyword cppSTLfunction stable_sort
-syntax keyword cppSTLfunction str
-syntax keyword cppSTLfunction strcat
-syntax keyword cppSTLfunction strchr
-syntax keyword cppSTLfunction strcmp
-syntax keyword cppSTLfunction strcoll
-syntax keyword cppSTLfunction strcpy
-syntax keyword cppSTLfunction strcspn
-syntax keyword cppSTLfunction strerror
-syntax keyword cppSTLfunction strftime
-syntax keyword cppSTLfunction string
-syntax keyword cppSTLfunction strlen
-syntax keyword cppSTLfunction strncat
-syntax keyword cppSTLfunction strncmp
-syntax keyword cppSTLfunction strncpy
-syntax keyword cppSTLfunction strpbrk
-syntax keyword cppSTLfunction strrchr
-syntax keyword cppSTLfunction strspn
-syntax keyword cppSTLfunction strstr
-syntax keyword cppSTLfunction strtod
-syntax keyword cppSTLfunction strtof
-syntax keyword cppSTLfunction strtok
-syntax keyword cppSTLfunction strtol
-syntax keyword cppSTLfunction strtold
-syntax keyword cppSTLfunction strtoll
-syntax keyword cppSTLfunction strtoul
-syntax keyword cppSTLfunction strxfrm
-syntax keyword cppSTLfunction substr
-syntax keyword cppSTLfunction swap
-syntax keyword cppSTLfunction swap_ranges
-syntax keyword cppSTLfunction swprintf
-syntax keyword cppSTLfunction swscanf
-syntax keyword cppSTLfunction sync_with_stdio
-syntax keyword cppSTLfunction system
-syntax keyword cppSTLfunction tan
-syntax keyword cppSTLfunction tanh
-syntax keyword cppSTLfunction tellg
-syntax keyword cppSTLfunction tellp
-syntax keyword cppSTLfunction test
-syntax keyword cppSTLfunction time
-syntax keyword cppSTLfunction tmpfile
-syntax keyword cppSTLfunction tmpnam
-syntax keyword cppSTLfunction tolower
-syntax keyword cppSTLfunction top
-syntax keyword cppSTLfunction to_string
-syntax keyword cppSTLfunction to_ulong
-syntax keyword cppSTLfunction toupper
-syntax keyword cppSTLfunction to_wstring
-syntax keyword cppSTLfunction transform
-syntax keyword cppSTLfunction unary_compose
-syntax keyword cppSTLfunction unget
-syntax keyword cppSTLfunction ungetc
-syntax keyword cppSTLfunction uninitialized_copy
-syntax keyword cppSTLfunction uninitialized_copy_n
-syntax keyword cppSTLfunction uninitialized_fill
-syntax keyword cppSTLfunction uninitialized_fill_n
-syntax keyword cppSTLfunction unique
-syntax keyword cppSTLfunction unique_copy
-syntax keyword cppSTLfunction unsetf
-syntax keyword cppSTLfunction upper_bound
-syntax keyword cppSTLfunction va_arg
-syntax keyword cppSTLfunction va_copy
-syntax keyword cppSTLfunction va_end
-syntax keyword cppSTLfunction value_comp
-syntax keyword cppSTLfunction va_start
-syntax keyword cppSTLfunction vfprintf
-syntax keyword cppSTLfunction vfwprintf
-syntax keyword cppSTLfunction vprintf
-syntax keyword cppSTLfunction vsprintf
-syntax keyword cppSTLfunction vswprintf
-syntax keyword cppSTLfunction vwprintf
-syntax keyword cppSTLfunction width
-syntax keyword cppSTLfunction wprintf
-syntax keyword cppSTLfunction write
-syntax keyword cppSTLfunction wscanf
+"syntax keyword cppSTLfunction open
+"syntax keyword cppSTLfunction partial_sort
+"syntax keyword cppSTLfunction partial_sort_copy
+"syntax keyword cppSTLfunction partial_sum
+"syntax keyword cppSTLfunction partition
+"syntax keyword cppSTLfunction peek
+"syntax keyword cppSTLfunction perror
+"syntax keyword cppSTLfunction polar
+"syntax keyword cppSTLfunction pop
+"syntax keyword cppSTLfunction pop_back
+"syntax keyword cppSTLfunction pop_front
+"syntax keyword cppSTLfunction pop_heap
+"syntax keyword cppSTLfunction pow
+"syntax keyword cppSTLfunction power
+"syntax keyword cppSTLfunction precision
+"syntax keyword cppSTLfunction prev_permutation
+"syntax keyword cppSTLfunction printf
+"syntax keyword cppSTLfunction ptr_fun
+"syntax keyword cppSTLfunction push
+"syntax keyword cppSTLfunction push_back
+"syntax keyword cppSTLfunction push_front
+"syntax keyword cppSTLfunction push_heap
+"syntax keyword cppSTLfunction put
+"syntax keyword cppSTLfunction putback
+"syntax keyword cppSTLfunction putc
+"syntax keyword cppSTLfunction putchar
+"syntax keyword cppSTLfunction puts
+"syntax keyword cppSTLfunction qsort
+"syntax keyword cppSTLfunction quiet_NaN
+"syntax keyword cppSTLfunction raise
+"syntax keyword cppSTLfunction rand
+"syntax keyword cppSTLfunction random_sample
+"syntax keyword cppSTLfunction random_sample_n
+"syntax keyword cppSTLfunction random_shuffle
+"syntax keyword cppSTLfunction rbegin
+"syntax keyword cppSTLfunction rdbuf
+"syntax keyword cppSTLfunction rdstate
+"syntax keyword cppSTLfunction read
+"syntax keyword cppSTLfunction real
+"syntax keyword cppSTLfunction realloc
+"syntax keyword cppSTLfunction remove
+"syntax keyword cppSTLfunction remove_copy
+"syntax keyword cppSTLfunction remove_copy_if
+"syntax keyword cppSTLfunction remove_if
+"syntax keyword cppSTLfunction rename
+"syntax keyword cppSTLfunction rend
+"syntax keyword cppSTLfunction replace
+"syntax keyword cppSTLfunction replace_copy
+"syntax keyword cppSTLfunction replace_copy_if
+"syntax keyword cppSTLfunction replace_if
+"syntax keyword cppSTLfunction reserve
+"syntax keyword cppSTLfunction reset
+"syntax keyword cppSTLfunction resize
+"syntax keyword cppSTLfunction return_temporary_buffer
+"syntax keyword cppSTLfunction reverse
+"syntax keyword cppSTLfunction reverse_copy
+"syntax keyword cppSTLfunction rewind
+"syntax keyword cppSTLfunction rfind
+"syntax keyword cppSTLfunction rotate
+"syntax keyword cppSTLfunction rotate_copy
+"syntax keyword cppSTLfunction round_error
+"syntax keyword cppSTLfunction scanf
+"syntax keyword cppSTLfunction search
+"syntax keyword cppSTLfunction search_n
+"syntax keyword cppSTLfunction second
+"syntax keyword cppSTLfunction seekg
+"syntax keyword cppSTLfunction seekp
+"syntax keyword cppSTLfunction setbuf
+"syntax keyword cppSTLfunction set_difference
+"syntax keyword cppSTLfunction setf
+"syntax keyword cppSTLfunction set_intersection
+"syntax keyword cppSTLfunction setjmp
+"syntax keyword cppSTLfunction setlocale
+"syntax keyword cppSTLfunction set_new_handler
+"syntax keyword cppSTLfunction set_symmetric_difference
+"syntax keyword cppSTLfunction set_union
+"syntax keyword cppSTLfunction setvbuf
+"syntax keyword cppSTLfunction signal
+"syntax keyword cppSTLfunction signaling_NaN
+"syntax keyword cppSTLfunction sin
+"syntax keyword cppSTLfunction sinh
+"syntax keyword cppSTLfunction size
+"syntax keyword cppSTLfunction sort
+"syntax keyword cppSTLfunction sort_heap
+"syntax keyword cppSTLfunction splice
+"syntax keyword cppSTLfunction sprintf
+"syntax keyword cppSTLfunction sqrt
+"syntax keyword cppSTLfunction srand
+"syntax keyword cppSTLfunction sscanf
+"syntax keyword cppSTLfunction stable_partition
+"syntax keyword cppSTLfunction stable_sort
+"syntax keyword cppSTLfunction str
+"syntax keyword cppSTLfunction strcat
+"syntax keyword cppSTLfunction strchr
+"syntax keyword cppSTLfunction strcmp
+"syntax keyword cppSTLfunction strcoll
+"syntax keyword cppSTLfunction strcpy
+"syntax keyword cppSTLfunction strcspn
+"syntax keyword cppSTLfunction strerror
+"syntax keyword cppSTLfunction strftime
+"syntax keyword cppSTLfunction string
+"syntax keyword cppSTLfunction strlen
+"syntax keyword cppSTLfunction strncat
+"syntax keyword cppSTLfunction strncmp
+"syntax keyword cppSTLfunction strncpy
+"syntax keyword cppSTLfunction strpbrk
+"syntax keyword cppSTLfunction strrchr
+"syntax keyword cppSTLfunction strspn
+"syntax keyword cppSTLfunction strstr
+"syntax keyword cppSTLfunction strtod
+"syntax keyword cppSTLfunction strtof
+"syntax keyword cppSTLfunction strtok
+"syntax keyword cppSTLfunction strtol
+"syntax keyword cppSTLfunction strtold
+"syntax keyword cppSTLfunction strtoll
+"syntax keyword cppSTLfunction strtoul
+"syntax keyword cppSTLfunction strxfrm
+"syntax keyword cppSTLfunction substr
+"syntax keyword cppSTLfunction swap
+"syntax keyword cppSTLfunction swap_ranges
+"syntax keyword cppSTLfunction swprintf
+"syntax keyword cppSTLfunction swscanf
+"syntax keyword cppSTLfunction sync_with_stdio
+"syntax keyword cppSTLfunction system
+"syntax keyword cppSTLfunction tan
+"syntax keyword cppSTLfunction tanh
+"syntax keyword cppSTLfunction tellg
+"syntax keyword cppSTLfunction tellp
+"syntax keyword cppSTLfunction test
+"syntax keyword cppSTLfunction time
+"syntax keyword cppSTLfunction tmpfile
+"syntax keyword cppSTLfunction tmpnam
+"syntax keyword cppSTLfunction tolower
+"syntax keyword cppSTLfunction top
+"syntax keyword cppSTLfunction to_string
+"syntax keyword cppSTLfunction to_ulong
+"syntax keyword cppSTLfunction toupper
+"syntax keyword cppSTLfunction to_wstring
+"syntax keyword cppSTLfunction transform
+"syntax keyword cppSTLfunction unary_compose
+"syntax keyword cppSTLfunction unget
+"syntax keyword cppSTLfunction ungetc
+"syntax keyword cppSTLfunction uninitialized_copy
+"syntax keyword cppSTLfunction uninitialized_copy_n
+"syntax keyword cppSTLfunction uninitialized_fill
+"syntax keyword cppSTLfunction uninitialized_fill_n
+"syntax keyword cppSTLfunction unique
+"syntax keyword cppSTLfunction unique_copy
+"syntax keyword cppSTLfunction unsetf
+"syntax keyword cppSTLfunction upper_bound
+"syntax keyword cppSTLfunction va_arg
+"syntax keyword cppSTLfunction va_copy
+"syntax keyword cppSTLfunction va_end
+"syntax keyword cppSTLfunction value_comp
+"syntax keyword cppSTLfunction va_start
+"syntax keyword cppSTLfunction vfprintf
+"syntax keyword cppSTLfunction vfwprintf
+"syntax keyword cppSTLfunction vprintf
+"syntax keyword cppSTLfunction vsprintf
+"syntax keyword cppSTLfunction vswprintf
+"syntax keyword cppSTLfunction vwprintf
+"syntax keyword cppSTLfunction width
+"syntax keyword cppSTLfunction wprintf
+"syntax keyword cppSTLfunction write
+"syntax keyword cppSTLfunction wscanf
 syntax keyword cppSTLios boolalpha
 syntax keyword cppSTLios dec
 syntax keyword cppSTLios defaultfloat
@@ -678,19 +678,19 @@ syntax keyword cppSTLtype wstring
 syntax keyword cppSTLtype wstringbuf
 syntax keyword cppSTLtype wstringstream
 
-syntax keyword cppSTLfunction mblen
-syntax keyword cppSTLfunction mbtowc
-syntax keyword cppSTLfunction wctomb
-syntax keyword cppSTLfunction mbstowcs
-syntax keyword cppSTLfunction wcstombs
-syntax keyword cppSTLfunction mbsinit
-syntax keyword cppSTLfunction btowc
-syntax keyword cppSTLfunction wctob
-syntax keyword cppSTLfunction mbrlen
-syntax keyword cppSTLfunction mbrtowc
-syntax keyword cppSTLfunction wcrtomb
-syntax keyword cppSTLfunction mbsrtowcs
-syntax keyword cppSTLfunction wcsrtombs
+"syntax keyword cppSTLfunction mblen
+"syntax keyword cppSTLfunction mbtowc
+"syntax keyword cppSTLfunction wctomb
+"syntax keyword cppSTLfunction mbstowcs
+"syntax keyword cppSTLfunction wcstombs
+"syntax keyword cppSTLfunction mbsinit
+"syntax keyword cppSTLfunction btowc
+"syntax keyword cppSTLfunction wctob
+"syntax keyword cppSTLfunction mbrlen
+"syntax keyword cppSTLfunction mbrtowc
+"syntax keyword cppSTLfunction wcrtomb
+"syntax keyword cppSTLfunction mbsrtowcs
+"syntax keyword cppSTLfunction wcsrtombs
 
 syntax keyword cppSTLtype mbstate_t
 
@@ -699,54 +699,54 @@ syntax keyword cppSTLconstant MB_CUR_MAX
 syntax keyword cppSTLconstant __STDC_UTF_16__
 syntax keyword cppSTLconstant __STDC_UTF_32__
 
-syntax keyword cppSTLfunction iswalnum
-syntax keyword cppSTLfunction iswalpha
-syntax keyword cppSTLfunction iswlower
-syntax keyword cppSTLfunction iswupper
-syntax keyword cppSTLfunction iswdigit
-syntax keyword cppSTLfunction iswxdigit
-syntax keyword cppSTLfunction iswcntrl
-syntax keyword cppSTLfunction iswgraph
-syntax keyword cppSTLfunction iswspace
-syntax keyword cppSTLfunction iswprint
-syntax keyword cppSTLfunction iswpunct
-syntax keyword cppSTLfunction iswctype
-syntax keyword cppSTLfunction wctype
+"syntax keyword cppSTLfunction iswalnum
+"syntax keyword cppSTLfunction iswalpha
+"syntax keyword cppSTLfunction iswlower
+"syntax keyword cppSTLfunction iswupper
+"syntax keyword cppSTLfunction iswdigit
+"syntax keyword cppSTLfunction iswxdigit
+"syntax keyword cppSTLfunction iswcntrl
+"syntax keyword cppSTLfunction iswgraph
+"syntax keyword cppSTLfunction iswspace
+"syntax keyword cppSTLfunction iswprint
+"syntax keyword cppSTLfunction iswpunct
+"syntax keyword cppSTLfunction iswctype
+"syntax keyword cppSTLfunction wctype
 
-syntax keyword cppSTLfunction towlower
-syntax keyword cppSTLfunction towupper
-syntax keyword cppSTLfunction towctrans
-syntax keyword cppSTLfunction wctrans
+"syntax keyword cppSTLfunction towlower
+"syntax keyword cppSTLfunction towupper
+"syntax keyword cppSTLfunction towctrans
+"syntax keyword cppSTLfunction wctrans
 
-syntax keyword cppSTLfunction wcstol
-syntax keyword cppSTLfunction wcstoll
-syntax keyword cppSTLfunction wcstoul
-syntax keyword cppSTLfunction wcstoull
-syntax keyword cppSTLfunction wcstof
-syntax keyword cppSTLfunction wcstod
-syntax keyword cppSTLfunction wcstold
+"syntax keyword cppSTLfunction wcstol
+"syntax keyword cppSTLfunction wcstoll
+"syntax keyword cppSTLfunction wcstoul
+"syntax keyword cppSTLfunction wcstoull
+"syntax keyword cppSTLfunction wcstof
+"syntax keyword cppSTLfunction wcstod
+"syntax keyword cppSTLfunction wcstold
 
-syntax keyword cppSTLfunction wcscpy
-syntax keyword cppSTLfunction wcsncpy
-syntax keyword cppSTLfunction wcscat
-syntax keyword cppSTLfunction wcsncat
-syntax keyword cppSTLfunction wcsxfrm
-syntax keyword cppSTLfunction wcslen
-syntax keyword cppSTLfunction wcscmp
-syntax keyword cppSTLfunction wcsncmp
-syntax keyword cppSTLfunction wcscoll
-syntax keyword cppSTLfunction wcschr
-syntax keyword cppSTLfunction wcsrchr
-syntax keyword cppSTLfunction wcsspn
-syntax keyword cppSTLfunction wcscspn
-syntax keyword cppSTLfunction wcspbrk
-syntax keyword cppSTLfunction wcsstr
-syntax keyword cppSTLfunction wcstok
-syntax keyword cppSTLfunction wmemcpy
-syntax keyword cppSTLfunction wmemmove
-syntax keyword cppSTLfunction wmemcmp
-syntax keyword cppSTLfunction wmemchr
-syntax keyword cppSTLfunction wmemset
+"syntax keyword cppSTLfunction wcscpy
+"syntax keyword cppSTLfunction wcsncpy
+"syntax keyword cppSTLfunction wcscat
+"syntax keyword cppSTLfunction wcsncat
+"syntax keyword cppSTLfunction wcsxfrm
+"syntax keyword cppSTLfunction wcslen
+"syntax keyword cppSTLfunction wcscmp
+"syntax keyword cppSTLfunction wcsncmp
+"syntax keyword cppSTLfunction wcscoll
+"syntax keyword cppSTLfunction wcschr
+"syntax keyword cppSTLfunction wcsrchr
+"syntax keyword cppSTLfunction wcsspn
+"syntax keyword cppSTLfunction wcscspn
+"syntax keyword cppSTLfunction wcspbrk
+"syntax keyword cppSTLfunction wcsstr
+"syntax keyword cppSTLfunction wcstok
+"syntax keyword cppSTLfunction wmemcpy
+"syntax keyword cppSTLfunction wmemmove
+"syntax keyword cppSTLfunction wmemcmp
+"syntax keyword cppSTLfunction wmemchr
+"syntax keyword cppSTLfunction wmemset
 
 syntax keyword cppSTLtype wctrans_t
 syntax keyword cppSTLtype wctype_t
@@ -848,7 +848,7 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype integral_constant
     syntax keyword cppSTLtype true_type
     syntax keyword cppSTLtype false_type
-    syntax keyword cppSTLfunction declval
+    "syntax keyword cppSTLfunction declval
 
     syntax keyword cppSTLconstant piecewise_construct
     syntax keyword cppSTLtype piecewise_construct_t
@@ -867,47 +867,47 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLconstant allocator_arg
     syntax keyword cppSTLtype uses_allocator
     syntax keyword cppSTLtype scoped_allocator_adaptor
-    syntax keyword cppSTLfunction declare_reachable
-    syntax keyword cppSTLfunction undeclare_reachable
-    syntax keyword cppSTLfunction declare_no_pointers
-    syntax keyword cppSTLfunction undeclare_no_pointers
-    syntax keyword cppSTLfunction get_pointer_safety
+    "syntax keyword cppSTLfunction declare_reachable
+    "syntax keyword cppSTLfunction undeclare_reachable
+    "syntax keyword cppSTLfunction declare_no_pointers
+    "syntax keyword cppSTLfunction undeclare_no_pointers
+    "syntax keyword cppSTLfunction get_pointer_safety
     syntax keyword cppSTLtype pointer_safety
     syntax keyword cppSTLtype pointer_traits
-    syntax keyword cppSTLfunction addressof
-    syntax keyword cppSTLfunction align
-    syntax keyword cppSTLfunction make_shared
-    syntax keyword cppSTLfunction allocate_shared
+    "syntax keyword cppSTLfunction addressof
+    "syntax keyword cppSTLfunction align
+    "syntax keyword cppSTLfunction make_shared
+    "syntax keyword cppSTLfunction allocate_shared
     syntax keyword cppSTLcast static_pointer_cast
     syntax keyword cppSTLcast dynamic_pointer_cast
     syntax keyword cppSTLcast const_pointer_cast
-    syntax keyword cppSTLfunction get_deleter
+    "syntax keyword cppSTLfunction get_deleter
 
     " function object
-    syntax keyword cppSTLfunction bind
+    "syntax keyword cppSTLfunction bind
     syntax keyword cppSTLtype is_bind_expression
     syntax keyword cppSTLtype is_placeholder
     syntax keyword cppSTLconstant _1 _2 _3 _4 _5 _6 _7 _8 _9
-    syntax keyword cppSTLfunction mem_fn
-    syntax keyword cppSTLfunctional function
+    "syntax keyword cppSTLfunction mem_fn
+    "syntax keyword cppSTLfunctional function
     syntax keyword cppSTLexception bad_function_call
     syntax keyword cppSTLtype reference_wrapper
-    syntax keyword cppSTLfunction ref cref
+    "syntax keyword cppSTLfunction ref cref
 
     " bitset
-    syntax keyword cppSTLfunction all
-    syntax keyword cppSTLfunction to_ullong
+    "syntax keyword cppSTLfunction all
+    "syntax keyword cppSTLfunction to_ullong
 
     " iterator
     syntax keyword cppSTLiterator move_iterator
-    syntax keyword cppSTLfunction make_move_iterator
-    syntax keyword cppSTLfunction next prev
+    "syntax keyword cppSTLfunction make_move_iterator
+    "syntax keyword cppSTLfunction next prev
 
     " program support utilities
-    syntax keyword cppSTLfunction quick_exit
-    syntax keyword cppSTLfunction _Exit
-    syntax keyword cppSTLfunction at_quick_exit
-    syntax keyword cppSTLfunction forward
+    "syntax keyword cppSTLfunction quick_exit
+    "syntax keyword cppSTLfunction _Exit
+    "syntax keyword cppSTLfunction at_quick_exit
+    "syntax keyword cppSTLfunction forward
 
     " date and time
     syntax keyword cppSTLnamespace chrono
@@ -921,10 +921,10 @@ if !exists("cpp_no_cpp11")
 
     " tuple
     syntax keyword cppSTLtype tuple
-    syntax keyword cppSTLfunction make_tuple
-    syntax keyword cppSTLfunction tie
-    syntax keyword cppSTLfunction forward_as_tuple
-    syntax keyword cppSTLfunction tuple_cat
+    "syntax keyword cppSTLfunction make_tuple
+    "syntax keyword cppSTLfunction tie
+    "syntax keyword cppSTLfunction forward_as_tuple
+    "syntax keyword cppSTLfunction tuple_cat
     syntax keyword cppSTLtype tuple_size tuple_element
 
     " Container
@@ -935,23 +935,23 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype unordered_multimap
     syntax keyword cppSTLtype unordered_multiset
     syntax keyword cppSTLtype tuple
-    syntax keyword cppSTLfunction cbegin
-    syntax keyword cppSTLfunction cend
-    syntax keyword cppSTLfunction crbegin
-    syntax keyword cppSTLfunction crend
-    syntax keyword cppSTLfunction shrink_to_fit
-    syntax keyword cppSTLfunction emplace
-    syntax keyword cppSTLfunction emplace_back
-    syntax keyword cppSTLfunction emplace_front
-    syntax keyword cppSTLfunction emplace_hint
+    "syntax keyword cppSTLfunction cbegin
+    "syntax keyword cppSTLfunction cend
+    "syntax keyword cppSTLfunction crbegin
+    "syntax keyword cppSTLfunction crend
+    "syntax keyword cppSTLfunction shrink_to_fit
+    "syntax keyword cppSTLfunction emplace
+    "syntax keyword cppSTLfunction emplace_back
+    "syntax keyword cppSTLfunction emplace_front
+    "syntax keyword cppSTLfunction emplace_hint
 
     "forward_list
-    syntax keyword cppSTLfunction before_begin
-    syntax keyword cppSTLfunction cbefore_begin
-    syntax keyword cppSTLfunction insert_after
-    syntax keyword cppSTLfunction emplace_after
-    syntax keyword cppSTLfunction erase_after
-    syntax keyword cppSTLfunction splice_after
+    "syntax keyword cppSTLfunction before_begin
+    "syntax keyword cppSTLfunction cbefore_begin
+    "syntax keyword cppSTLfunction insert_after
+    "syntax keyword cppSTLfunction emplace_after
+    "syntax keyword cppSTLfunction erase_after
+    "syntax keyword cppSTLfunction splice_after
 
     " unordered
     syntax keyword cppSTLtype hash
@@ -959,83 +959,83 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype key_equal
     syntax keyword cppSTLiterator local_iterator
     syntax keyword cppSTLiterator const_local_iterator
-    syntax keyword cppSTLfunction bucket_count
-    syntax keyword cppSTLfunction max_bucket_count
-    syntax keyword cppSTLfunction bucket_size
-    syntax keyword cppSTLfunction bucket
-    syntax keyword cppSTLfunction load_factor
-    syntax keyword cppSTLfunction max_load_factor
-    syntax keyword cppSTLfunction rehash
-    syntax keyword cppSTLfunction reserve
-    syntax keyword cppSTLfunction hash_function
-    syntax keyword cppSTLfunction key_eq
+    "syntax keyword cppSTLfunction bucket_count
+    "syntax keyword cppSTLfunction max_bucket_count
+    "syntax keyword cppSTLfunction bucket_size
+    "syntax keyword cppSTLfunction bucket
+    "syntax keyword cppSTLfunction load_factor
+    "syntax keyword cppSTLfunction max_load_factor
+    "syntax keyword cppSTLfunction rehash
+    "syntax keyword cppSTLfunction reserve
+    "syntax keyword cppSTLfunction hash_function
+    "syntax keyword cppSTLfunction key_eq
 
     " algorithm
-    syntax keyword cppSTLfunction all_of any_of none_of
-    syntax keyword cppSTLfunction find_if_not
-    syntax keyword cppSTLfunction copy_if
-    syntax keyword cppSTLfunction copy_n
-    syntax keyword cppSTLfunction move
-    syntax keyword cppSTLfunction move_if_noexcept
-    syntax keyword cppSTLfunction move_backward
-    syntax keyword cppSTLfunction shuffle
-    syntax keyword cppSTLfunction is_partitioned
-    syntax keyword cppSTLfunction partition_copy
-    syntax keyword cppSTLfunction partition_point
-    syntax keyword cppSTLfunction is_sorted
-    syntax keyword cppSTLfunction is_sorted_until
-    syntax keyword cppSTLfunction is_heap_until
-    syntax keyword cppSTLfunction minmax
-    syntax keyword cppSTLfunction minmax_element
-    syntax keyword cppSTLfunction is_permutation
-    syntax keyword cppSTLfunction itoa
+    "syntax keyword cppSTLfunction all_of any_of none_of
+    "syntax keyword cppSTLfunction find_if_not
+    "syntax keyword cppSTLfunction copy_if
+    "syntax keyword cppSTLfunction copy_n
+    "syntax keyword cppSTLfunction move
+    "syntax keyword cppSTLfunction move_if_noexcept
+    "syntax keyword cppSTLfunction move_backward
+    "syntax keyword cppSTLfunction shuffle
+    "syntax keyword cppSTLfunction is_partitioned
+    "syntax keyword cppSTLfunction partition_copy
+    "syntax keyword cppSTLfunction partition_point
+    "syntax keyword cppSTLfunction is_sorted
+    "syntax keyword cppSTLfunction is_sorted_until
+    "syntax keyword cppSTLfunction is_heap_until
+    "syntax keyword cppSTLfunction minmax
+    "syntax keyword cppSTLfunction minmax_element
+    "syntax keyword cppSTLfunction is_permutation
+    "syntax keyword cppSTLfunction itoa
 
     " numerics
-    syntax keyword cppSTLfunction imaxabs
-    syntax keyword cppSTLfunction imaxdiv
-    syntax keyword cppSTLfunction remainder
-    syntax keyword cppSTLfunction remquo
-    syntax keyword cppSTLfunction fma
-    syntax keyword cppSTLfunction fmax
-    syntax keyword cppSTLfunction fmin
-    syntax keyword cppSTLfunction fdim
-    syntax keyword cppSTLfunction nan
-    syntax keyword cppSTLfunction nanf
-    syntax keyword cppSTLfunction nanl
-    syntax keyword cppSTLfunction exp2
-    syntax keyword cppSTLfunction expm1
-    syntax keyword cppSTLfunction log1p
-    syntax keyword cppSTLfunction log2
-    syntax keyword cppSTLfunction cbrt
-    syntax keyword cppSTLfunction hypot
-    syntax keyword cppSTLfunction asinh
-    syntax keyword cppSTLfunction acosh
-    syntax keyword cppSTLfunction atanh
-    syntax keyword cppSTLfunction erf
-    syntax keyword cppSTLfunction erfc
-    syntax keyword cppSTLfunction lgamma
-    syntax keyword cppSTLfunction tgamma
-    syntax keyword cppSTLfunction trunc
-    syntax keyword cppSTLfunction round
-    syntax keyword cppSTLfunction lround
-    syntax keyword cppSTLfunction llround
-    syntax keyword cppSTLfunction nearbyint
-    syntax keyword cppSTLfunction rint
-    syntax keyword cppSTLfunction lrint
-    syntax keyword cppSTLfunction llrint
-    syntax keyword cppSTLfunction scalbn
-    syntax keyword cppSTLfunction scalbln
-    syntax keyword cppSTLfunction ilogb
-    syntax keyword cppSTLfunction logb
-    syntax keyword cppSTLfunction nextafter
-    syntax keyword cppSTLfunction nexttoward
-    syntax keyword cppSTLfunction copysign
-    syntax keyword cppSTLfunction fpclassify
-    syntax keyword cppSTLfunction isfinite
-    syntax keyword cppSTLfunction isinf
-    syntax keyword cppSTLfunction isnan
-    syntax keyword cppSTLfunction isnormal
-    syntax keyword cppSTLfunction signbit
+    "syntax keyword cppSTLfunction imaxabs
+    "syntax keyword cppSTLfunction imaxdiv
+    "syntax keyword cppSTLfunction remainder
+    "syntax keyword cppSTLfunction remquo
+    "syntax keyword cppSTLfunction fma
+    "syntax keyword cppSTLfunction fmax
+    "syntax keyword cppSTLfunction fmin
+    "syntax keyword cppSTLfunction fdim
+    "syntax keyword cppSTLfunction nan
+    "syntax keyword cppSTLfunction nanf
+    "syntax keyword cppSTLfunction nanl
+    "syntax keyword cppSTLfunction exp2
+    "syntax keyword cppSTLfunction expm1
+    "syntax keyword cppSTLfunction log1p
+    "syntax keyword cppSTLfunction log2
+    "syntax keyword cppSTLfunction cbrt
+    "syntax keyword cppSTLfunction hypot
+    "syntax keyword cppSTLfunction asinh
+    "syntax keyword cppSTLfunction acosh
+    "syntax keyword cppSTLfunction atanh
+    "syntax keyword cppSTLfunction erf
+    "syntax keyword cppSTLfunction erfc
+    "syntax keyword cppSTLfunction lgamma
+    "syntax keyword cppSTLfunction tgamma
+    "syntax keyword cppSTLfunction trunc
+    "syntax keyword cppSTLfunction round
+    "syntax keyword cppSTLfunction lround
+    "syntax keyword cppSTLfunction llround
+    "syntax keyword cppSTLfunction nearbyint
+    "syntax keyword cppSTLfunction rint
+    "syntax keyword cppSTLfunction lrint
+    "syntax keyword cppSTLfunction llrint
+    "syntax keyword cppSTLfunction scalbn
+    "syntax keyword cppSTLfunction scalbln
+    "syntax keyword cppSTLfunction ilogb
+    "syntax keyword cppSTLfunction logb
+    "syntax keyword cppSTLfunction nextafter
+    "syntax keyword cppSTLfunction nexttoward
+    "syntax keyword cppSTLfunction copysign
+    "syntax keyword cppSTLfunction fpclassify
+    "syntax keyword cppSTLfunction isfinite
+    "syntax keyword cppSTLfunction isinf
+    "syntax keyword cppSTLfunction isnan
+    "syntax keyword cppSTLfunction isnormal
+    "syntax keyword cppSTLfunction signbit
     syntax keyword cppSTLconstant HUGE_VALF
     syntax keyword cppSTLconstant HUGE_VALL
     syntax keyword cppSTLconstant INFINITY
@@ -1051,7 +1051,7 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLconstant FLT_EVAL_METHOD
 
     " complex
-    syntax keyword cppSTLfunction proj
+    "syntax keyword cppSTLfunction proj
 
     " random
     syntax keyword cppSTLtype linear_congruential_engine
@@ -1071,7 +1071,7 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype ranlux24
     syntax keyword cppSTLtype ranlux48
     syntax keyword cppSTLtype knuth_b
-    syntax keyword cppSTLfunction generate_canonical
+    "syntax keyword cppSTLfunction generate_canonical
     syntax keyword cppSTLtype uniform_int_distribution
     syntax keyword cppSTLtype uniform_real_distribution
     syntax keyword cppSTLtype bernoulli_distribution
@@ -1095,15 +1095,15 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype seed_seq
 
     " io
-    syntax keyword cppSTLfunction iostream_category
+    "syntax keyword cppSTLfunction iostream_category
     syntax keyword cppSTLenum io_errc
-    syntax keyword cppSTLfunction vscanf vfscanf vsscanf
-    syntax keyword cppSTLfunction snprintf vsnprintf
-    syntax keyword cppSTLfunction vwscanf vfwscanf vswscanf
+    "syntax keyword cppSTLfunction vscanf vfscanf vsscanf
+    "syntax keyword cppSTLfunction snprintf vsnprintf
+    "syntax keyword cppSTLfunction vwscanf vfwscanf vswscanf
 
     " locale
-    syntax keyword cppSTLfunction isblank
-    syntax keyword cppSTLfunction iswblank
+    "syntax keyword cppSTLfunction isblank
+    "syntax keyword cppSTLfunction iswblank
     syntax keyword cppSTLtype wstring_convert
     syntax keyword cppSTLtype wbuffer_convert
     syntax keyword cppSTLtype codecvt_utf8
@@ -1124,33 +1124,33 @@ if !exists("cpp_no_cpp11")
 
     " atomic
     syntax keyword cppSTLtype atomic
-    syntax keyword cppSTLfunction atomic_is_lock_free
-    syntax keyword cppSTLfunction atomic_store
-    syntax keyword cppSTLfunction atomic_store_explicit
-    syntax keyword cppSTLfunction atomic_load
-    syntax keyword cppSTLfunction atomic_load_explicit
-    syntax keyword cppSTLfunction atomic_exchange
-    syntax keyword cppSTLfunction atomic_exchange_explicit
-    syntax keyword cppSTLfunction atomic_compare_exchange_weak
-    syntax keyword cppSTLfunction atomic_compare_exchange_weak_explicit
-    syntax keyword cppSTLfunction atomic_compare_exchange_strong
-    syntax keyword cppSTLfunction atomic_compare_exchange_strong_explicit
-    syntax keyword cppSTLfunction atomic_fetch_add
-    syntax keyword cppSTLfunction atomic_fetch_add_explicit
-    syntax keyword cppSTLfunction atomic_fetch_sub
-    syntax keyword cppSTLfunction atomic_fetch_sub_explicit
-    syntax keyword cppSTLfunction atomic_fetch_and
-    syntax keyword cppSTLfunction atomic_fetch_and_explicit
-    syntax keyword cppSTLfunction atomic_fetch_or
-    syntax keyword cppSTLfunction atomic_fetch_or_explicit
-    syntax keyword cppSTLfunction atomic_fetch_xor
-    syntax keyword cppSTLfunction atomic_fetch_xor_explicit
+    "syntax keyword cppSTLfunction atomic_is_lock_free
+    "syntax keyword cppSTLfunction atomic_store
+    "syntax keyword cppSTLfunction atomic_store_explicit
+    "syntax keyword cppSTLfunction atomic_load
+    "syntax keyword cppSTLfunction atomic_load_explicit
+    "syntax keyword cppSTLfunction atomic_exchange
+    "syntax keyword cppSTLfunction atomic_exchange_explicit
+    "syntax keyword cppSTLfunction atomic_compare_exchange_weak
+    "syntax keyword cppSTLfunction atomic_compare_exchange_weak_explicit
+    "syntax keyword cppSTLfunction atomic_compare_exchange_strong
+    "syntax keyword cppSTLfunction atomic_compare_exchange_strong_explicit
+    "syntax keyword cppSTLfunction atomic_fetch_add
+    "syntax keyword cppSTLfunction atomic_fetch_add_explicit
+    "syntax keyword cppSTLfunction atomic_fetch_sub
+    "syntax keyword cppSTLfunction atomic_fetch_sub_explicit
+    "syntax keyword cppSTLfunction atomic_fetch_and
+    "syntax keyword cppSTLfunction atomic_fetch_and_explicit
+    "syntax keyword cppSTLfunction atomic_fetch_or
+    "syntax keyword cppSTLfunction atomic_fetch_or_explicit
+    "syntax keyword cppSTLfunction atomic_fetch_xor
+    "syntax keyword cppSTLfunction atomic_fetch_xor_explicit
 
     syntax keyword cppSTLtype atomic_flag
-    syntax keyword cppSTLfunction atomic_flag_test_and_set
-    syntax keyword cppSTLfunction atomic_flag_test_and_set_explicit
-    syntax keyword cppSTLfunction atomic_flag_clear
-    syntax keyword cppSTLfunction atomic_flag_clear_explicit
+    "syntax keyword cppSTLfunction atomic_flag_test_and_set
+    "syntax keyword cppSTLfunction atomic_flag_test_and_set_explicit
+    "syntax keyword cppSTLfunction atomic_flag_clear
+    "syntax keyword cppSTLfunction atomic_flag_clear_explicit
 
     syntax keyword cppSTLtype atomic_bool
     syntax keyword cppSTLtype atomic_char
@@ -1191,27 +1191,27 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype atomic_uintmax_t
 
     syntax keyword cppSTLtype memory_order
-    syntax keyword cppSTLfunction atomic_init
-    syntax keyword cppSTLfunction ATOMIC_VAR_INIT
+    "syntax keyword cppSTLfunction atomic_init
+    "syntax keyword cppSTLfunction ATOMIC_VAR_INIT
     syntax keyword cppSTLconstant ATOMIC_FLAG_INIT
-    syntax keyword cppSTLfunction kill_dependency
-    syntax keyword cppSTLfunction atomic_thread_fence
-    syntax keyword cppSTLfunction atomic_signal_fence
+    "syntax keyword cppSTLfunction kill_dependency
+    "syntax keyword cppSTLfunction atomic_thread_fence
+    "syntax keyword cppSTLfunction atomic_signal_fence
 
     " thread
     syntax keyword cppSTLtype thread
     syntax keyword cppSTLnamespace this_thread
-    syntax keyword cppSTLfunction yield
-    syntax keyword cppSTLfunction get_id
-    syntax keyword cppSTLfunction sleep_for
-    syntax keyword cppSTLfunction sleep_until
+    "syntax keyword cppSTLfunction yield
+    "syntax keyword cppSTLfunction get_id
+    "syntax keyword cppSTLfunction sleep_for
+    "syntax keyword cppSTLfunction sleep_until
 
-    syntax keyword cppSTLfunction joinable
-    syntax keyword cppSTLfunction get_id
-    syntax keyword cppSTLfunction native_handle
-    syntax keyword cppSTLfunction hardware_concurrency
-    syntax keyword cppSTLfunction join
-    syntax keyword cppSTLfunction detach
+    "syntax keyword cppSTLfunction joinable
+    "syntax keyword cppSTLfunction get_id
+    "syntax keyword cppSTLfunction native_handle
+    "syntax keyword cppSTLfunction hardware_concurrency
+    "syntax keyword cppSTLfunction join
+    "syntax keyword cppSTLfunction detach
 
     syntax keyword cppSTLtype mutex
     syntax keyword cppSTLtype timed_mutex
@@ -1223,12 +1223,12 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype try_to_lock_t
     syntax keyword cppSTLtype adopt_lock_t
     syntax keyword cppSTLconstant defer_lock try_to_lock adopt_lock
-    syntax keyword cppSTLfunction try_lock lock
-    syntax keyword cppSTLfunction call_once
+    "syntax keyword cppSTLfunction try_lock lock
+    "syntax keyword cppSTLfunction call_once
     syntax keyword cppSTLtype once_flag
     syntax keyword cppSTLtype condition_variable
     syntax keyword cppSTLtype condition_variable_any
-    syntax keyword cppSTLfunction notify_all_at_thread_exit
+    "syntax keyword cppSTLfunction notify_all_at_thread_exit
     syntax keyword cppSTLenum cv_status
 
     syntax keyword cppSTLtype promise
@@ -1236,23 +1236,23 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype future
     syntax keyword cppSTLtype shared_future
 
-    syntax keyword cppSTLfunction async
+    "syntax keyword cppSTLfunction async
     syntax keyword cppSTLenum launch
 
     syntax keyword cppSTLenum future_status
     syntax keyword cppSTLenum future_errc
     syntax keyword cppSTLtype future_error
-    syntax keyword cppSTLfunction future_category
+    "syntax keyword cppSTLfunction future_category
 
     " string
-    syntax keyword cppSTLfunction stoi
-    syntax keyword cppSTLfunction stol
-    syntax keyword cppSTLfunction stoll
-    syntax keyword cppSTLfunction stoul
-    syntax keyword cppSTLfunction stoull
-    syntax keyword cppSTLfunction stof
-    syntax keyword cppSTLfunction stod
-    syntax keyword cppSTLfunction stold
+    "syntax keyword cppSTLfunction stoi
+    "syntax keyword cppSTLfunction stol
+    "syntax keyword cppSTLfunction stoll
+    "syntax keyword cppSTLfunction stoul
+    "syntax keyword cppSTLfunction stoull
+    "syntax keyword cppSTLfunction stof
+    "syntax keyword cppSTLfunction stod
+    "syntax keyword cppSTLfunction stold
 
     " ratio
     syntax keyword cppSTLtype ratio
@@ -1288,19 +1288,19 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype ratio_greater_equal
 
     "limits
-    syntax keyword cppSTLfunction lowest
+    "syntax keyword cppSTLfunction lowest
 
     "cuchar
-    syntax keyword cppSTLfunction mbrtoc16
-    syntax keyword cppSTLfunction c16rtomb
-    syntax keyword cppSTLfunction mbrtoc32
-    syntax keyword cppSTLfunction c32rtomb
+    "syntax keyword cppSTLfunction mbrtoc16
+    "syntax keyword cppSTLfunction c16rtomb
+    "syntax keyword cppSTLfunction mbrtoc32
+    "syntax keyword cppSTLfunction c32rtomb
 
     "cinttypes
-    syntax keyword cppSTLfunction strtoimax
-    syntax keyword cppSTLfunction strtoumax
-    syntax keyword cppSTLfunction wcstoimax
-    syntax keyword cppSTLfunction wcstoumax
+    "syntax keyword cppSTLfunction strtoimax
+    "syntax keyword cppSTLfunction strtoumax
+    "syntax keyword cppSTLfunction wcstoimax
+    "syntax keyword cppSTLfunction wcstoumax
 
     syntax keyword cppSTLtype nanoseconds
     syntax keyword cppSTLtype microseconds
@@ -1322,15 +1322,15 @@ if !exists("cpp_no_cpp14")
     syntax keyword cppSTLtype shared_lock
 
     "memory
-    syntax keyword cppSTLfunction make_unique
+    "syntax keyword cppSTLfunction make_unique
 endif " C++14
 
 if !exists("cpp_no_boost")
     "optional is not a part of C++14 anymore
     syntax keyword cppSTLtype optional
-    "syntax keyword cppSTLfunction value
-    syntax keyword cppSTLfunction value_or
-    syntax keyword cppSTLfunction make_optional
+    ""syntax keyword cppSTLfunction value
+    "syntax keyword cppSTLfunction value_or
+    "syntax keyword cppSTLfunction make_optional
 
     syntax keyword cppSTLnamespace boost
     syntax keyword cppSTLcast lexical_cast
@@ -1352,7 +1352,7 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppSTLfunc         Function
   HiLink cppSTLfunctional   Typedef
   HiLink cppSTLconstant     Constant
-  HiLink cppSTLnamespace    Constant
+  HiLink cppSTLnamespace    CppConstant
   HiLink cppSTLtype         Typedef
   HiLink cppSTLexception    Exception
   HiLink cppSTLiterator     Typedef
@@ -1360,7 +1360,7 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppSTLenum         Typedef
   HiLink cppSTLios          Function
   HiLink cppSTLcast         Statement " be consistent with official syntax
-  HiLink cppRawString       String 
+  HiLink cppRawString       String
   HiLink cppRawDelimiter    Delimiter
   delcommand HiLink
 endif"
